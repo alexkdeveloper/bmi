@@ -1,0 +1,7 @@
+data/com.github.alexkdeveloper.bmi.desktop.in
+data/com.github.alexkdeveloper.bmi.appdata.xml.in
+data/com.github.alexkdeveloper.bmi.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+
