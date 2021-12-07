@@ -1,4 +1,4 @@
-name: bmi
+name: index
 version: "1.0.0"
 grade: stable
 base: core20
