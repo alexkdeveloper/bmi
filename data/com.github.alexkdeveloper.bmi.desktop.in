@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=BMI
+Comment=BMI Calculator
 Exec=com.github.alexkdeveloper.bmi
 Icon=com.github.alexkdeveloper.bmi
 Terminal=false
