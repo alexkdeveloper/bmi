@@ -15,7 +15,7 @@ bmi_sources += gnome.compile_resources('bmi-resources',
   c_name: 'bmi'
 )
 
-executable('bmi', bmi_sources,
+executable('com.github.alexkdeveloper.bmi', bmi_sources,
   vala_args: '--target-glib=2.50',  dependencies: bmi_deps,
   install: true,
 )
