@@ -7,7 +7,8 @@
   <name>BMI</name>
   <summary>Simple BMI Calculator</summary>
   <description>
-    <p>A simple body mass index calculator. The program makes it easy to calculate BMI based on data on gender, weight, height and wrist circumference. The results of the calculations are approximate, are for informational purposes only and cannot be used for medical purposes.</p>
+    <p>A simple body mass index calculator. The program makes it easy to calculate BMI based on data on gender, weight, height and wrist circumference.</p>
+    <p>The results of the calculations are approximate, are for informational purposes only and cannot be used for medical purposes.</p>
   </description>
   <provides>
     <binary>com.github.alexkdeveloper.bmi</binary>
@@ -53,9 +54,7 @@
   <releases>
     <release version="1.0.0" date="2021-12-05" urgency="medium">
           <description>
-            <ul>
-              <li>Initial release</li>
-            </ul>
+            <p>Initial release</p>
           </description>
         </release>
   </releases>
