@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=BMI
-Exec=bmi
+Exec=com.github.alexkdeveloper.bmi
 Icon=com.github.alexkdeveloper.bmi
 Terminal=false
 Type=Application
