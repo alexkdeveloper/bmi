@@ -6,7 +6,7 @@ summary: Simple BMI Calculator
 description: A simple body mass index calculator. The program makes it easy to calculate BMI based on data on gender, weight, height and wrist circumference. The results of the calculations are approximate, are for informational purposes only and cannot be used for medical purposes.
 confinement: strict
 parts:
-  bmi:
+  index:
     after: [desktop-gnome-platform]
     plugin: meson
     meson-parameters:
@@ -32,16 +32,16 @@ parts:
       snapcraftctl build
       mkdir -pv $SNAPCRAFT_PART_INSTALL/gnome-platform
 apps:
-  bmi:
+  index:
     command: usr/bin/com.github.alexkdeveloper.bmi
     desktop: usr/share/applications/com.github.alexkdeveloper.bmi.desktop
     plugs:
       - x11
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
-    slots: [ dbus-bmi ]
+    slots: [ dbus-index ]
 slots:
-  dbus-bmi:
+  dbus-index:
     interface: dbus
     bus: session
     name: com.github.alexkdeveloper.bmi
