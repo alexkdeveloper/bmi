@@ -54,7 +54,9 @@
   <releases>
     <release version="1.0.0" date="2021-12-05" urgency="medium">
           <description>
-            <p>Initial release</p>
+            <ul>
+              <li>Initial release</li>
+            </ul>
           </description>
         </release>
   </releases>
