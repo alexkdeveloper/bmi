@@ -43,6 +43,7 @@ namespace Bmi {
 
 		public Window (Gtk.Application app) {
 			Object (application: app);
+            get_style_context().add_class("rounded");
 			entry_weight.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
         entry_weight.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
@@ -67,17 +68,17 @@ namespace Bmi {
 		}
 		private void on_calculate(){
          if(is_empty(entry_weight.get_text())){
-             alert("Enter the name");
+             alert("Enter the weight");
              entry_weight.grab_focus();
              return;
          }
          if(is_empty(entry_height.get_text())){
-             alert("Enter the day of births");
+             alert("Enter the height");
              entry_height.grab_focus();
              return;
          }
          if(is_empty(entry_wrist.get_text())){
-             alert("Enter the year of births");
+             alert("Enter the length of the wrist circumference");
              entry_wrist.grab_focus();
              return;
          }
@@ -93,37 +94,37 @@ namespace Bmi {
         string s_gender,s;
     if (combobox.get_active()==0){
         gender=19;
-        s_gender="Пол: мужской";
+        s_gender="Gender: male";
     }else{
         gender=16;
-        s_gender="Пол: женский";
+        s_gender="Gender: female";
     }
      user_h=user_h/100;
      index=user_w/(user_h*user_h);
      index=index*(gender/user_c);
 
-     if(index<16)s="Дефицит веса";
-     else if(index>=16&&index<20)s="Недостаточный вес";
-     else if(index>=20&&index<25)s="Норма";
-     else if(index>=25&&index<30)s="Предожирение";
-     else if(index>=30&&index<35)s="Первая степень ожирения";
-     else if(index>=35&&index<40)s="Вторая степень ожирения";
-     else s="Морбидное ожирение";
+     if(index<16)s="Deficiency of weight";
+     else if(index>=16&&index<20)s="Insufficient weight";
+     else if(index>=20&&index<25)s="Norm";
+     else if(index>=25&&index<30)s="Pre-obese";
+     else if(index>=30&&index<35)s="The first degree of obesity";
+     else if(index>=35&&index<40)s="Second degree of obesity";
+     else s="Morbid obesity";
 
      stack.visible_child = window_result_page;
      set_widget_visible(back_button,true);
 
-     text_view.buffer.text=s_gender+"\n"+somato_type(gender, user_c)+"\n"+"ИМТ: "+index.to_string()+"\n"+s+"\n"+normal_mass_min(user_c, user_h, gender)
+     text_view.buffer.text=s_gender+"\n"+somato_type(gender, user_c)+"\n"+"BMI: "+index.to_string()+"\n"+s+"\n"+normal_mass_min(user_c, user_h, gender)
      +"\n"+normal_mass_max(user_c, user_h, gender);
 		}
 		private string normal_mass_min(float x,float y,int z){
-        return "Нижняя граница нормального веса: "+(20*(x*(y*y)/z)).to_string()+" кг.";
+        return "Lower limit of normal weight: "+(20*(x*(y*y)/z)).to_string()+" kg.";
     }
     private string normal_mass_max(float x,float y,int z){
-        return "Верхняя граница нормального веса: "+(25*(x*(y*y)/z)).to_string()+" кг.";
+        return "Upper limit of normal weight: "+(25*(x*(y*y)/z)).to_string()+" kg.";
     }
     private string somato_type(int a,float b){
-        string s="",s_type_a="Тип телосложения: астенический",s_type_n="Тип телосложения: нормостенический",s_type_h="Тип телосложения: гиперстенический";
+        string s="",s_type_a="Body type: asthenic",s_type_n="Body type: normostenic",s_type_h="Body type: hypersthenic";
         switch(a){
             case 19:
                 if(b<18)s=s_type_a;

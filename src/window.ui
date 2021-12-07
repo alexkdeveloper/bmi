@@ -52,7 +52,7 @@
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Weight(in kg):</property>
+                    <property name="label" translatable="yes">Weight (in kg):</property>
                     <property name="xalign">0</property>
                   </object>
                   <packing>
@@ -89,7 +89,7 @@
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Height(in cm):</property>
+                    <property name="label" translatable="yes">Height (in cm):</property>
                     <property name="xalign">0</property>
                   </object>
                   <packing>
@@ -126,7 +126,7 @@
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Gender:</property>
+                    <property name="label" translatable="yes">Wrist circumference (in cm):</property>
                     <property name="xalign">0</property>
                   </object>
                   <packing>
@@ -136,17 +136,9 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkComboBox" id="combobox">
+                  <object class="GtkEntry" id="entry_wrist">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="model">liststore</property>
-                    <property name="active">0</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer_months"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
+                    <property name="can-focus">True</property>
                   </object>
                   <packing>
                     <property name="expand">True</property>
@@ -171,7 +163,7 @@
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Wrist circumference (in cm):</property>
+                    <property name="label" translatable="yes">Gender:</property>
                     <property name="xalign">0</property>
                   </object>
                   <packing>
@@ -181,9 +173,17 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEntry" id="entry_wrist">
+                  <object class="GtkComboBox" id="combobox">
                     <property name="visible">True</property>
-                    <property name="can-focus">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="model">liststore</property>
+                    <property name="active">0</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="renderer_months"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
                   </object>
                   <packing>
                     <property name="expand">True</property>
