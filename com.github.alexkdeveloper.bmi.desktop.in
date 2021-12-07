@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=BMI
-Exec=bmi
-Icon=com.github.alexkdeveloper.bmi
-Terminal=false
-Type=Application
-Categories=GTK;
-StartupNotify=true
