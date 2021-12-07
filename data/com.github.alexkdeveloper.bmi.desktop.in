@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=bmi
+Name=BMI
 Exec=bmi
 Icon=com.github.alexkdeveloper.bmi
 Terminal=false
