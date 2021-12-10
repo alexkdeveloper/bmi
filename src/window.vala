@@ -124,7 +124,7 @@ namespace Bmi {
         return "Upper limit of normal weight: "+(25*(x*(y*y)/z)).to_string()+" kg.";
     }
     private string somato_type(int a,float b){
-        string s="",s_type_a="Body type: asthenic",s_type_n="Body type: normostenic",s_type_h="Body type: hypersthenic";
+        string s="",s_type_a="Body type: asthenic",s_type_n="Body type: normosthenic",s_type_h="Body type: hypersthenic";
         switch(a){
             case 19:
                 if(b<18)s=s_type_a;
@@ -153,10 +153,10 @@ namespace Bmi {
          widget.visible = visible;
   }
     private void alert (string str){
-          var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title("Message");
-          dialog_alert.run();
-          dialog_alert.destroy();
+          var dialog = new Granite.MessageDialog.with_image_from_icon_name ("Message", str, "dialog-warning");
+                  dialog.show_all ();
+                  dialog.run ();
+                  dialog.destroy ();
        }
 	}
 }
