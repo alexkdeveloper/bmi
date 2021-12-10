@@ -5,5 +5,6 @@ Exec=com.github.alexkdeveloper.bmi
 Icon=com.github.alexkdeveloper.bmi
 Terminal=false
 Type=Application
-Categories=GTK;
+Categories=GTK;Science;Education;
+Keywords=BMI;Body Mass;Health;Health Check;
 StartupNotify=true
