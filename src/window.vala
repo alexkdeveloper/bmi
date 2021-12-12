@@ -24,9 +24,17 @@ namespace Bmi {
         [GtkChild]
         unowned Gtk.Box box_data_page;
         [GtkChild]
-        unowned Gtk.ScrolledWindow window_result_page;
+        unowned Gtk.Box box_result_page;
         [GtkChild]
-        unowned Gtk.TextView text_view;
+        unowned Gtk.Label index_result;
+        [GtkChild]
+        unowned Gtk.Label type_result;
+        [GtkChild]
+        unowned Gtk.Label result;
+        [GtkChild]
+        unowned Gtk.Label min_mass;
+        [GtkChild]
+        unowned Gtk.Label max_mass;
         [GtkChild]
         unowned Gtk.ComboBox combobox;
         [GtkChild]
@@ -65,6 +73,13 @@ namespace Bmi {
             set_widget_visible(back_button,false);
             back_button.clicked.connect(go_to_data_page);
             calculate_button.clicked.connect(on_calculate);
+          var css_provider = new Gtk.CssProvider();
+       try {
+                css_provider.load_from_data(".index_size {font-weight: bold; font-size: 15px} .norm_result {color: green; font-size: 18px} .not_norm_result{color: red; font-size: 18px}");
+                Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+            } catch (Error e) {
+                error ("Cannot load CSS stylesheet: %s", e.message);
+        }
 		}
 		private void on_calculate(){
          if(is_empty(entry_weight.get_text())){
@@ -91,13 +106,11 @@ namespace Bmi {
 
         float index;
         int gender;
-        string s_gender,s;
+        string s;
     if (combobox.get_active()==0){
         gender=19;
-        s_gender="Gender: male";
     }else{
         gender=16;
-        s_gender="Gender: female";
     }
      user_h=user_h/100;
      index=user_w/(user_h*user_h);
@@ -111,12 +124,25 @@ namespace Bmi {
      else if(index>=35&&index<40)s="Second degree of obesity";
      else s="Morbid obesity";
 
-     stack.visible_child = window_result_page;
+     stack.visible_child = box_result_page;
      set_widget_visible(back_button,true);
 
-     text_view.buffer.text=s_gender+"\n"+somato_type(gender, user_c)+"\n"+"BMI: "+index.to_string()+"\n"+s+"\n"+normal_mass_min(user_c, user_h, gender)
-     +"\n"+normal_mass_max(user_c, user_h, gender);
-		}
+     if(s=="Norm"){
+         result.get_style_context().remove_class("not_norm_result");
+         result.get_style_context().add_class("norm_result");
+     }else{
+         result.get_style_context().remove_class("norm_result");
+         result.get_style_context().add_class("not_norm_result");
+     }
+
+     index_result.get_style_context().add_class("index_size");
+
+     index_result.set_text("BMI: "+index.to_string());
+     type_result.set_text(somato_type(gender, user_c));
+     result.set_text(s);
+     min_mass.set_text(normal_mass_min(user_c, user_h, gender));
+     max_mass.set_text(normal_mass_max(user_c, user_h, gender));
+	}
 		private string normal_mass_min(float x,float y,int z){
         return "Lower limit of normal weight: "+(20*(x*(y*y)/z)).to_string()+" kg.";
     }
