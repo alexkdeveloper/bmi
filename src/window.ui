@@ -179,7 +179,7 @@
                     <property name="model">liststore</property>
                     <property name="active">0</property>
                     <child>
-                      <object class="GtkCellRendererText" id="renderer_months"/>
+                      <object class="GtkCellRendererText" id="renderer_genders"/>
                       <attributes>
                         <attribute name="text">0</attribute>
                       </attributes>

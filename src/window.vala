@@ -56,18 +56,21 @@ namespace Bmi {
         entry_weight.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
             entry_weight.set_text ("");
+            entry_weight.grab_focus();
            }
         });
         entry_height.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
         entry_height.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
               entry_height.set_text("");
+              entry_height.grab_focus();
            }
         });
         entry_wrist.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
         entry_wrist.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
               entry_wrist.set_text("");
+              entry_wrist.grab_focus();
            }
         });
             set_widget_visible(back_button,false);
