@@ -57,16 +57,12 @@
   <releases>
     <release version="1.0.1" date="2022-01-01">
           <description>
-            <ul>
-             <li>Replace scalable icon with svg</li>
-            </ul>
+            <p>Replace scalable icon with svg</p>
           </description>
         </release>
     <release version="1.0.0" date="2021-12-14">
           <description>
-            <ul>
-             <li>Initial release</li>
-            </ul>
+            <p>Initial release</p>
           </description>
         </release>
   </releases>
