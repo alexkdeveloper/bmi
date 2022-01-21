@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 19:12+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.alexkdeveloper.bmi.desktop.in:3
+#: data/com.github.alexkdeveloper.bmi.appdata.xml.in:7
+msgid "BMI"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.desktop.in:4
+msgid "BMI Calculator"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.desktop.in:6
+msgid "com.github.alexkdeveloper.bmi"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.desktop.in:10
+msgid "BMI;Body Mass;Health;Health Check;"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.appdata.xml.in:8
+msgid "Simple BMI Calculator"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.appdata.xml.in:10
+msgid ""
+"A simple body mass index calculator. The program makes it easy to calculate "
+"BMI based on data on gender, weight, height and wrist circumference."
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.appdata.xml.in:11
+msgid ""
+"The results of the calculations are approximate, are for informational "
+"purposes only and cannot be used for medical purposes."
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.appdata.xml.in:16
+msgid "Alex Kryuchkov"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.appdata.xml.in:60
+msgid "Replace scalable icon with svg"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.bmi.appdata.xml.in:65
+msgid "Initial release"
+msgstr ""

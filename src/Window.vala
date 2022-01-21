@@ -17,7 +17,7 @@
  */
 
 namespace Bmi {
-	[GtkTemplate (ui = "/com/github/alexkdeveloper/bmi/window.ui")]
+	[GtkTemplate (ui = "/com/github/alexkdeveloper/bmi/Window.ui")]
 	public class Window : Gtk.ApplicationWindow {
 		[GtkChild]
         unowned Gtk.Stack stack;
@@ -119,13 +119,13 @@ namespace Bmi {
      index=user_w/(user_h*user_h);
      index=index*(gender/user_c);
 
-     if(index<16)s="Deficiency of weight";
-     else if(index>=16&&index<20)s="Insufficient weight";
-     else if(index>=20&&index<25)s="Norm";
-     else if(index>=25&&index<30)s="Pre-obese";
-     else if(index>=30&&index<35)s="The first degree of obesity";
-     else if(index>=35&&index<40)s="Second degree of obesity";
-     else s="Morbid obesity";
+     if(index<16)s=_("Deficiency of weight");
+     else if(index>=16&&index<20)s=_("Insufficient weight");
+     else if(index>=20&&index<25)s=_("Norm");
+     else if(index>=25&&index<30)s=_("Pre-obese");
+     else if(index>=30&&index<35)s=_("The first degree of obesity");
+     else if(index>=35&&index<40)s=_("Second degree of obesity");
+     else s=_("Morbid obesity");
 
      stack.visible_child = box_result_page;
      set_widget_visible(back_button,true);
@@ -147,13 +147,13 @@ namespace Bmi {
      max_mass.set_text(normal_mass_max(user_c, user_h, gender));
 	}
 		private string normal_mass_min(float x,float y,int z){
-        return "Lower limit of normal weight: "+(20*(x*(y*y)/z)).to_string()+" kg.";
+        return _("Lower limit of normal weight: %f kg.").printf(20*(x*(y*y)/z));
     }
     private string normal_mass_max(float x,float y,int z){
-        return "Upper limit of normal weight: "+(25*(x*(y*y)/z)).to_string()+" kg.";
+        return _("Upper limit of normal weight: %f kg.").printf(25*(x*(y*y)/z));
     }
     private string somato_type(int a,float b){
-        string s="",s_type_a="Body type: asthenic",s_type_n="Body type: normosthenic",s_type_h="Body type: hypersthenic";
+        string s="",s_type_a=_("Body type: asthenic"),s_type_n=_("Body type: normosthenic"),s_type_h=_("Body type: hypersthenic");
         switch(a){
             case 19:
                 if(b<18)s=s_type_a;
@@ -182,7 +182,7 @@ namespace Bmi {
          widget.visible = visible;
   }
     private void alert (string str){
-          var dialog = new Granite.MessageDialog.with_image_from_icon_name ("Message", str, "dialog-warning");
+          var dialog = new Granite.MessageDialog.with_image_from_icon_name (_("Message"), str, "dialog-warning");
                   dialog.show_all ();
                   dialog.run ();
                   dialog.destroy ();

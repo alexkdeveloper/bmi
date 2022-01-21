@@ -1,16 +1,49 @@
-project('bmi', ['c', 'vala'],
-          version: '0.1.0',
-    meson_version: '>= 0.50.0',
-  default_options: [ 'warning_level=2',
-                   ],
+# Project name, programming language and version
+project (
+    'com.github.alexkdeveloper.bmi',
+    'c', 'vala',
+    version: '0.1.0'
 )
 
-i18n = import('i18n')
+# Translation module
+i18n = import ('i18n')
 
+# Project arguments
+add_project_arguments (
+    '-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name ()),
+    language: 'c'
+)
 
+# GNOME module
+gnome = import ('gnome')
 
-subdir('data')
-subdir('src')
-subdir('po')
+# Compiling resources
+gresource = gnome.compile_resources (
+    'gresource',
+    join_paths ('data', meson.project_name ()) + '.gresource.xml',
+    source_dir: 'data',
+    c_name: 'as'
+)
 
-meson.add_install_script('build-aux/meson/postinstall.py')
+# Listing dependencies
+dependencies = [
+    dependency ('gio-2.0'),
+    dependency ('gtk+-3.0'),
+    dependency ('granite')
+]
+
+subdir ('src')
+
+# Defining executable
+executable (
+    meson.project_name (),
+    sources,
+    gresource,
+    dependencies: dependencies,
+    install: true
+)
+
+subdir ('data')
+subdir ('po')
+
+meson.add_install_script ('meson/post_install.py')
