@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.alexkdeveloper.bmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-21 19:12+0100\n"
+"POT-Creation-Date: 2022-01-21 19:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,16 +45,8 @@ msgstr ""
 msgid "CALCULATE"
 msgstr ""
 
-#: data/Window.ui:217
-msgid "page0"
-msgstr ""
-
-#: data/Window.ui:289
-msgid "page1"
-msgstr ""
-
 #: data/Window.ui:306
-msgid "back"
+msgid "Back"
 msgstr ""
 
 #: src/Window.vala:122
