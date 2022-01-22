@@ -296,7 +296,7 @@
       <object class="GtkHeaderBar" id="header_bar">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
-        <property name="title">BMI</property>
+        <property name="title" translatable="yes">BMI</property>
         <property name="show-close-button">True</property>
         <child>
           <object class="GtkButton" id="back_button">
