@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.alexkdeveloper.bmi package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.alexkdeveloper.bmi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 19:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/Window.ui:17
+msgid "Male"
+msgstr ""
+
+#: data/Window.ui:20
+msgid "Female"
+msgstr ""
+
+#: data/Window.ui:55
+msgid "Weight (in kg):"
+msgstr ""
+
+#: data/Window.ui:92
+msgid "Height (in cm):"
+msgstr ""
+
+#: data/Window.ui:129
+msgid "Wrist circumference (in cm):"
+msgstr ""
+
+#: data/Window.ui:166
+msgid "Gender:"
+msgstr ""
+
+#: data/Window.ui:203
+msgid "CALCULATE"
+msgstr ""
+
+#: data/Window.ui:306
+msgid "Back"
+msgstr ""
+
+#: src/Window.vala:122
+msgid "Deficiency of weight"
+msgstr ""
+
+#: src/Window.vala:123
+msgid "Insufficient weight"
+msgstr ""
+
+#: src/Window.vala:124
+msgid "Norm"
+msgstr ""
+
+#: src/Window.vala:125
+msgid "Pre-obese"
+msgstr ""
+
+#: src/Window.vala:126
+msgid "The first degree of obesity"
+msgstr ""
+
+#: src/Window.vala:127
+msgid "Second degree of obesity"
+msgstr ""
+
+#: src/Window.vala:128
+msgid "Morbid obesity"
+msgstr ""
+
+#: src/Window.vala:150
+#, c-format
+msgid "Lower limit of normal weight: %f kg."
+msgstr ""
+
+#: src/Window.vala:153
+#, c-format
+msgid "Upper limit of normal weight: %f kg."
+msgstr ""
+
+#: src/Window.vala:156
+msgid "Body type: asthenic"
+msgstr ""
+
+#: src/Window.vala:156
+msgid "Body type: normosthenic"
+msgstr ""
+
+#: src/Window.vala:156
+msgid "Body type: hypersthenic"
+msgstr ""
+
+#: src/Window.vala:185
+msgid "Message"
+msgstr ""
