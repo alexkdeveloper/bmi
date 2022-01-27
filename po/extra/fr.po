@@ -1,63 +1,68 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# French translations for extra package.
+# Copyright (C) 2022 THE extra'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the extra package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Nathan Bonnemains (@NathanBnm), 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-22 16:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-22 16:02+0100\n"
+"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
+"Language-Team: none\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: data/com.github.alexkdeveloper.bmi.desktop.in:3
 #: data/com.github.alexkdeveloper.bmi.appdata.xml.in:7
 msgid "BMI"
-msgstr ""
+msgstr "IMC"
 
 #: data/com.github.alexkdeveloper.bmi.desktop.in:4
 msgid "BMI Calculator"
-msgstr ""
+msgstr "Calculateur d'IMC"
 
 #: data/com.github.alexkdeveloper.bmi.desktop.in:6
 msgid "com.github.alexkdeveloper.bmi"
-msgstr ""
+msgstr "com.github.alexkdeveloper.bmi"
 
 #: data/com.github.alexkdeveloper.bmi.desktop.in:10
 msgid "BMI;Body Mass;Health;Health Check;"
-msgstr ""
+msgstr "IMC;Masse corporelle;Santé;"
 
 #: data/com.github.alexkdeveloper.bmi.appdata.xml.in:8
 msgid "Simple BMI Calculator"
-msgstr ""
+msgstr "Un simple calculateur d'IMC"
 
 #: data/com.github.alexkdeveloper.bmi.appdata.xml.in:10
 msgid ""
 "A simple body mass index calculator. The program makes it easy to calculate "
 "BMI based on data on gender, weight, height and wrist circumference."
 msgstr ""
+"Un simple calculateur de l'indicateur de masse corporelle. Le programme rend "
+"l'IMC facile à calculer à partir du genre, du poids, de la taille et de la "
+"cironférence du poignet."
 
 #: data/com.github.alexkdeveloper.bmi.appdata.xml.in:11
 msgid ""
 "The results of the calculations are approximate, are for informational "
 "purposes only and cannot be used for medical purposes."
 msgstr ""
+"Les résultats des calculs sont approximatifs, à des fins d'information "
+"uniquement et ne peuvent pas être utilisés à des fins médicales."
 
 #: data/com.github.alexkdeveloper.bmi.appdata.xml.in:16
 msgid "Alex Kryuchkov"
-msgstr ""
+msgstr "Alex Kryuchkov"
 
 #: data/com.github.alexkdeveloper.bmi.appdata.xml.in:60
 msgid "Replace scalable icon with svg"
-msgstr ""
+msgstr "Remplacement de l'icône par un svg"
 
 #: data/com.github.alexkdeveloper.bmi.appdata.xml.in:65
 msgid "Initial release"
-msgstr ""
+msgstr "Version initiale"

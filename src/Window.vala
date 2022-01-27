@@ -86,17 +86,17 @@ namespace Bmi {
 		}
 		private void on_calculate(){
          if(is_empty(entry_weight.get_text())){
-             alert("Enter the weight");
+             alert(_("Please enter the weight"));
              entry_weight.grab_focus();
              return;
          }
          if(is_empty(entry_height.get_text())){
-             alert("Enter the height");
+             alert(_("Please enter the height"));
              entry_height.grab_focus();
              return;
          }
          if(is_empty(entry_wrist.get_text())){
-             alert("Enter the length of the wrist circumference");
+             alert(_("Please enter the length of the wrist circumference"));
              entry_wrist.grab_focus();
              return;
          }
@@ -130,7 +130,7 @@ namespace Bmi {
      stack.visible_child = box_result_page;
      set_widget_visible(back_button,true);
 
-     if(s=="Norm"){
+     if(s==_("Norm")){
          result.get_style_context().remove_class("not_norm_result");
          result.get_style_context().add_class("norm_result");
      }else{
@@ -140,7 +140,7 @@ namespace Bmi {
 
      index_result.get_style_context().add_class("index_size");
 
-     index_result.set_text("BMI: "+index.to_string());
+     index_result.set_text(_("BMI: %f").printf(index));
      type_result.set_text(somato_type(gender, user_c));
      result.set_text(s);
      min_mass.set_text(normal_mass_min(user_c, user_h, gender));
