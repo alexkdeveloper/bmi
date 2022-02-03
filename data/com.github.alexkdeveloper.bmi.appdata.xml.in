@@ -55,6 +55,12 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <releases>
+     <release version="1.0.2" date="2022-02-03">
+          <description>
+            <p>Added French translation</p>
+            <p>The app icon has been updated</p>
+          </description>
+        </release>
     <release version="1.0.1" date="2022-01-01">
           <description>
             <p>Replace scalable icon with svg</p>
