@@ -23,7 +23,6 @@ parts:
         - libgranite-dev
         - libgtksourceview-3.0-dev
     stage-packages:
-        - gnome-keyring
         - gobject-introspection
         - libgdk-pixbuf2.0-0
         - libgee-0.8-2
