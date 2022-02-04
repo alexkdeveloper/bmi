@@ -24,6 +24,7 @@ parts:
         - libgtksourceview-3.0-dev
     stage-packages:
         - gobject-introspection
+        - libgranite
         - libgdk-pixbuf2.0-0
         - libgee-0.8-2
         - libgtk-3-0
