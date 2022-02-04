@@ -28,6 +28,8 @@ parts:
         - libgdk-pixbuf2.0-0
         - libgee-0.8-2
         - libgtk-3-0
+        - language-pack-fr-base
+        - language-pack-en-base
   desktop-gnome-platform:
     source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
     source-subdir: gtk
