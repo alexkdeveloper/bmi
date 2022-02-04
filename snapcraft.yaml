@@ -1,10 +1,10 @@
 name: index
-version: "1.0.0"
+version: "1.0.2"
 grade: stable
 base: core20
 summary: Simple BMI Calculator
 description: A simple body mass index calculator. The program makes it easy to calculate BMI based on data on gender, weight, height and wrist circumference. The results of the calculations are approximate, are for informational purposes only and cannot be used for medical purposes.
-icon: data/icons/hicolor/scalable/apps/com.github.alexkdeveloper.bmi.png
+icon: data/icons/com.github.alexkdeveloper.bmi.svg
 confinement: strict
 parts:
   index:
