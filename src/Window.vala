@@ -19,6 +19,8 @@
 namespace Bmi {
 	[GtkTemplate (ui = "/com/github/alexkdeveloper/bmi/Window.ui")]
 	public class Window : Gtk.ApplicationWindow {
+        [GtkChild]
+        unowned Gtk.HeaderBar header_bar;
 		[GtkChild]
         unowned Gtk.Stack stack;
         [GtkChild]
@@ -51,7 +53,9 @@ namespace Bmi {
 
 		public Window (Gtk.Application app) {
 			Object (application: app);
-            get_style_context().add_class("rounded");
+            header_bar.get_style_context().add_class(Gtk.STYLE_CLASS_FLAT);
+            header_bar.show_close_button = true;
+            set_titlebar(header_bar);
 			entry_weight.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
         entry_weight.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
