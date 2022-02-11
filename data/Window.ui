@@ -299,7 +299,7 @@
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
-            <property name="tooltip-text" translatable="yes">to Home Page</property>
+            <property name="tooltip-text" translatable="yes">To the main page</property>
             <property name="always-show-image">True</property>
             <style>
               <class name="back-button"/>
