@@ -306,6 +306,9 @@
             </style>
           </object>
         </child>
+        <style>
+          <class name="flat"/>
+        </style>
       </object>
     </child>
     <style>
