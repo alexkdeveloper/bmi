@@ -1,4 +1,5 @@
 sources = files (
   'Main.vala',
-  'Window.vala'
+  'Window.vala',
+  'Calculator.vala'
 )

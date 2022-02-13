@@ -19,8 +19,6 @@
 namespace Bmi {
 	[GtkTemplate (ui = "/com/github/alexkdeveloper/bmi/Window.ui")]
 	public class Window : Gtk.ApplicationWindow {
-        [GtkChild]
-        unowned Gtk.HeaderBar header_bar;
 		[GtkChild]
         unowned Gtk.Stack stack;
         [GtkChild]
@@ -53,9 +51,6 @@ namespace Bmi {
 
 		public Window (Gtk.Application app) {
 			Object (application: app);
-            header_bar.get_style_context().add_class(Gtk.STYLE_CLASS_FLAT);
-            header_bar.show_close_button = true;
-            set_titlebar(header_bar);
 			entry_weight.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
         entry_weight.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
@@ -119,17 +114,11 @@ namespace Bmi {
     }else{
         gender=16;
     }
-     user_h=user_h/100;
-     index=user_w/(user_h*user_h);
-     index=index*(gender/user_c);
+    var calculator = new Calculator();
+    
+     index = calculator.calculate_index(user_h, user_w, user_c, gender);
 
-     if(index<16)s=_("Deficiency of weight");
-     else if(index>=16&&index<20)s=_("Insufficient weight");
-     else if(index>=20&&index<25)s=_("Norm");
-     else if(index>=25&&index<30)s=_("Pre-obese");
-     else if(index>=30&&index<35)s=_("The first degree of obesity");
-     else if(index>=35&&index<40)s=_("Second degree of obesity");
-     else s=_("Morbid obesity");
+     s = calculator.calculate_result(index);
 
      stack.visible_child = box_result_page;
      set_widget_visible(back_button,true);
@@ -145,35 +134,11 @@ namespace Bmi {
      index_result.get_style_context().add_class("index_size");
 
      index_result.set_text(_("BMI: %f").printf(index));
-     type_result.set_text(somato_type(gender, user_c));
+     type_result.set_text(calculator.somato_type(gender, user_c));
      result.set_text(s);
-     min_mass.set_text(normal_mass_min(user_c, user_h, gender));
-     max_mass.set_text(normal_mass_max(user_c, user_h, gender));
+     min_mass.set_text(calculator.normal_mass_min(user_c, user_h, gender));
+     max_mass.set_text(calculator.normal_mass_max(user_c, user_h, gender));
 	}
-		private string normal_mass_min(float x,float y,int z){
-        return _("Lower limit of normal weight: %f kg.").printf(20*(x*(y*y)/z));
-    }
-    private string normal_mass_max(float x,float y,int z){
-        return _("Upper limit of normal weight: %f kg.").printf(25*(x*(y*y)/z));
-    }
-    private string somato_type(int a,float b){
-        string s="",s_type_a=_("Body type: asthenic"),s_type_n=_("Body type: normosthenic"),s_type_h=_("Body type: hypersthenic");
-        switch(a){
-            case 19:
-                if(b<18)s=s_type_a;
-                else if(b>=18&&b<=20)s=s_type_n;
-                else s=s_type_h;
-                break;
-            case 16:
-                if(b<15)s=s_type_a;
-                else if(b>=15&&b<=17)s=s_type_n;
-                else s=s_type_h;
-                break;
-                default:
-                break;
-        }
-        return s;
-    }
 		private void go_to_data_page(){
            stack.visible_child = box_data_page;
            set_widget_visible(back_button,false);
