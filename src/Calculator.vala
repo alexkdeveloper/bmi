@@ -19,9 +19,11 @@ namespace Bmi {
             return s;
         }
         public string normal_mass_min(float x,float y,int z){
+            y = y/100;
             return _("Lower limit of normal weight: %f kg.").printf(20*(x*(y*y)/z));
         }
         public string normal_mass_max(float x,float y,int z){
+            y = y/100;
             return _("Upper limit of normal weight: %f kg.").printf(25*(x*(y*y)/z));
         }
         public string somato_type(int a,float b){
