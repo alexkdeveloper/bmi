@@ -30,6 +30,7 @@
     <release version="1.0.4" date="2022-05-15">
           <description>
             <p>Update to elementary platform version 7</p>
+            <p>Added Dutch translation</p>
           </description>
         </release>
     <release version="1.0.3" date="2022-02-12">
