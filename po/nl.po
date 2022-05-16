@@ -1,0 +1,83 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.alexkdeveloper.bmi package.
+#
+# Heimen Stoffels <vistausss@fastmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.alexkdeveloper.bmi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-02 12:19+0200\n"
+"PO-Revision-Date: 2022-05-02 12:24+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.04.0\n"
+
+#: data/Window.ui:12
+msgid "Male"
+msgstr "Man"
+
+#: data/Window.ui:15
+msgid "Female"
+msgstr "Vrouw"
+
+#: data/Window.ui:50
+msgid "Weight (in kg):"
+msgstr "Gewicht (in kg):"
+
+#: data/Window.ui:87
+msgid "Height (in cm):"
+msgstr "Lengte (in cm):"
+
+#: data/Window.ui:124
+msgid "Wrist circumference (in cm):"
+msgstr "Taille (in cm):"
+
+#: data/Window.ui:161
+msgid "Gender:"
+msgstr "Geslacht:"
+
+#: data/Window.ui:198
+msgid "CALCULATE"
+msgstr "BEREKENEN"
+
+#: data/Window.ui:294
+msgid "BMI"
+msgstr "BMI"
+
+#: data/Window.ui:298
+msgid "Back"
+msgstr "Terug"
+
+#: data/Window.ui:302
+msgid "To the main page"
+msgstr "Terug naar de invoerpagina"
+
+#: src/Window.vala:88
+msgid "Please enter the weight"
+msgstr "Voer uw gewicht in"
+
+#: src/Window.vala:93
+msgid "Please enter the height"
+msgstr "Voer uw lengte in"
+
+#: src/Window.vala:98
+msgid "Please enter the length of the wrist circumference"
+msgstr "Voer uw taille-omtrek in"
+
+#: src/Window.vala:126
+msgid "Norm"
+msgstr "Normaal gewicht"
+
+#: src/Window.vala:136
+#, c-format
+msgid "BMI: %f"
+msgstr "BMI: %f"
+
+#: src/Window.vala:154
+msgid "Message"
+msgstr "Bericht"
