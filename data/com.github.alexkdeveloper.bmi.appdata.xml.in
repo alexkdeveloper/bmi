@@ -19,9 +19,11 @@
   <url type="help">http://github.com/alexkdeveloper/bmi/issues</url>
   <screenshots>
     <screenshot type="default">
+    <caption>Data entry</caption>
     <image>https://raw.githubusercontent.com/alexkdeveloper/bmi/main/data/screenshots/screenshot1.png</image>
     </screenshot>
     <screenshot type="default">
+    <caption>Getting the result</caption>
     <image>https://raw.githubusercontent.com/alexkdeveloper/bmi/main/data/screenshots/screenshot2.png</image>
     </screenshot>
   </screenshots>
