@@ -1,2 +1,3 @@
 data/Window.ui
 src/Window.vala
+src/Calculator.vala

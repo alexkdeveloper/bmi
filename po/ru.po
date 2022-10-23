@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-10-23 20:52+0800\n"
+"PO-Revision-Date: 2022-10-23 21:04+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: src/Window.vala\n"
+"X-Poedit-SearchPath-1: src/Calculator.vala\n"
+"X-Poedit-SearchPath-2: data/Window.ui\n"
+
+#: data/Window.ui:12
+msgid "Male"
+msgstr "Мужской"
+
+#: data/Window.ui:15
+msgid "Female"
+msgstr "Женский"
+
+#: data/Window.ui:50
+msgid "Weight (in kg):"
+msgstr "Вес (в кг):"
+
+#: data/Window.ui:87
+msgid "Height (in cm):"
+msgstr "Рост (в см):"
+
+#: data/Window.ui:124
+msgid "Wrist circumference (in cm):"
+msgstr "Окружность запястья (в см):"
+
+#: data/Window.ui:161
+msgid "Gender:"
+msgstr "Пол:"
+
+#: data/Window.ui:198
+msgid "CALCULATE"
+msgstr "РАСЧЕТ"
+
+#: data/Window.ui:294
+msgid "BMI"
+msgstr "BMI"
+
+#: data/Window.ui:298
+msgid "Back"
+msgstr "Назад"
+
+#: data/Window.ui:302
+msgid "To the main page"
+msgstr "На главную страницу"
+
+#: src/Calculator.vala:12
+msgid "Deficiency of weight"
+msgstr "Дефицит веса"
+
+#: src/Calculator.vala:13
+msgid "Insufficient weight"
+msgstr "Недостаточный вес"
+
+#: src/Calculator.vala:14 src/Window.vala:126
+msgid "Norm"
+msgstr "Норма"
+
+#: src/Calculator.vala:15
+msgid "Pre-obese"
+msgstr "Предожирение"
+
+#: src/Calculator.vala:16
+msgid "The first degree of obesity"
+msgstr "Первая степень ожирения"
+
+#: src/Calculator.vala:17
+msgid "Second degree of obesity"
+msgstr "Вторая степень ожирения"
+
+#: src/Calculator.vala:18
+msgid "Morbid obesity"
+msgstr "Морбидное ожирение"
+
+#: src/Calculator.vala:23
+#, c-format
+msgid "Lower limit of normal weight: %f kg."
+msgstr "Нижняя граница нормального веса: %f кг."
+
+#: src/Calculator.vala:27
+#, c-format
+msgid "Upper limit of normal weight: %f kg."
+msgstr "Верхняя граница нормального веса: %f кг."
+
+#: src/Calculator.vala:30
+msgid "Body type: asthenic"
+msgstr "Тип телосложения: астенический"
+
+#: src/Calculator.vala:30
+msgid "Body type: normosthenic"
+msgstr "Тип телосложения: нормостенический"
+
+#: src/Calculator.vala:30
+msgid "Body type: hypersthenic"
+msgstr "Тип телосложения: гиперстенический"
+
+#: src/Window.vala:88
+msgid "Please enter the weight"
+msgstr "Пожалуйста, введите вес"
+
+#: src/Window.vala:93
+msgid "Please enter the height"
+msgstr "Пожалуйста, введите рост"
+
+#: src/Window.vala:98
+msgid "Please enter the length of the wrist circumference"
+msgstr "Пожалуйста, введите длину окружности запястья"
+
+#: src/Window.vala:136
+#, c-format
+msgid "BMI: %f"
+msgstr "ИМТ: %f"
+
+#: src/Window.vala:154
+msgid "Message"
+msgstr "Сообщение"
+
